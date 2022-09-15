@@ -2,6 +2,8 @@ package com.ices.ethereumevent.config;
 
 import io.reactivex.Flowable;
 import io.reactivex.functions.Function;
+
+import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -387,8 +389,10 @@ public class VotesContract extends Contract {
         public List<BigInteger> values;
     }
 
-    public static class TransferSingleEventResponse extends BaseEventResponse {
-        public String operator;
+    
+    public static class TransferSingleEventResponse extends BaseEventResponse{
+
+		public String operator;
 
         public String from;
 
